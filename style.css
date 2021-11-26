@@ -1,126 +1,137 @@
-/*-global--------------------------------------------------------*/
-html {
-    font-size: 10px;
-    backface-visibility: hidden;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    color: black;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 2rem;
-}
-
-/*-main-----------------------------------------------------------*/
-main {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 10rem;
-    margin-right: 2rem;
-}
-
-@media (max-width: 600px) {
+    /*-global--------------------------------------------------------*/
+    html {
+        font-size: 10px;
+        backface-visibility: hidden;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        color: black;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+    
+    /*-main-----------------------------------------------------------*/
     main {
         display: flex;
+        flex-direction: row;
+        padding-bottom: 10rem;
+        margin-right: 2rem;
+    }
+    
+    @media (max-width: 600px) {
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
+    
+    @media (min-width: 1000px) {
+        main {
+            width: 80%;
+            margin: auto;
+        }
+        
+    }
+    
+    /*-nav-----------------------------------------------------------*/
+    #navbar {
+        width: 100%;
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    #ul-nav {
+        list-style-type: none;
+    }
+    
+    .li-nav {
+        padding: 1rem;
+        margin: 1rem 0 1rem 0;
+        background-color: lightgray;
+        border-radius: 1rem;
+    }
+    .li-nav:hover {
+        background-color: gray;
+    }
+    
+    /*-titles-------------------------------------------------------*/
+    h1, h2, h3, h4 {
+        font-weight: 700;
+    }
+    
+    @media (max-width: 600px) {
+        h3 {
+            text-align: center;
+        }
+        
+    }
+    
+    h1 {
+        text-align: center;
+        background-color: lightgray;
+        padding: 3rem;
+    }
+    
+    h3 {
+        padding: 3rem;
+        font-size: 4rem;
+    }
+    
+    h4 {
+        padding: 2rem;
+        font-size: 3rem;
+    }
+    
+    
+    /*-div-section---------------------------------------------------*/
+    #div-section {
+        margin: 2rem;
+        
+    }
+    
+    li {
+        list-style-position: inside;
+        padding-left: 2rem;
+        padding-top: 2rem;
+    }
+    
+    p {
+        text-align: justify;
+        text-indent: 3rem;
+    }
+    
+    /*-footer---------------------------------------*/
+    
+    footer {
+        display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem;
+        gap: 2rem;
+        background-color: lightgray;
     }
     
-}
-
-@media (min-width: 1000px) {
-    main {
-        width: 80%;
-        margin: auto;
+    #github-link {
+        background-color: blue;
+        padding: 1rem;
+        border-radius: 1rem;
+        color: white;
     }
     
-}
-
-/*-nav-----------------------------------------------------------*/
-#navbar {
-    width: 100%;
-    text-align: center;
-    padding: 2rem;
-}
-
-#ul-nav {
-    list-style-type: none;
-}
-
-.li-nav {
-    padding: 1rem;
-    margin: 1rem 0 1rem 0;
-    background-color: lightgray;
-    border-radius: 1rem;
-}
-.li-nav:hover {
-    background-color: gray;
-}
-
-/*-titles-------------------------------------------------------*/
-h1, h2, h3, h4 {
-    font-weight: 700;
-}
-
-h1 {
-    text-align: center;
-    background-color: lightgray;
-    padding: 3rem;
-}
-
-h3 {
-    padding: 3rem;
-    font-size: 4rem;
-}
-
-h4 {
-    padding: 2rem;
-    font-size: 3rem;
-}
-
-
-/*-div-section---------------------------------------------------*/
-#div-section {
-    margin: 2rem;
+    #github-link:hover {
+        background-color: darkblue;
+    }
     
-}
-
-li {
-    list-style-position: inside;
-    padding-left: 2rem;
-    padding-top: 2rem;
-}
-
-p {
-    text-align: justify;
-    text-indent: 3rem;
-}
-
-/*-footer---------------------------------------*/
-
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem;
-    gap: 2rem;
-    background-color: lightgray;
-}
-
-#github-link {
-    background-color: blue;
-    padding: 1rem;
-    border-radius: 1rem;
-    color: white;
-}
-
-#github-link:hover {
-    background-color: darkblue;
-}
+    #p-footer {
+        text-align: center;
+    }
